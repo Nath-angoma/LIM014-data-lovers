@@ -1,0 +1,87 @@
+
+
+.contenedor{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+   
+
+}
+
+.pokemon{
+    display: flex;
+    padding: 12px 13px 8px 12px;
+    margin-bottom: 12px;
+    flex-direction: column;
+    z-index: -1;
+    
+}
+
+figure {
+    background: #EBE7F4;
+    border-radius: 20px;
+    margin-top: -20px;
+    display: flex;
+    flex-direction: column;
+}
+
+img {
+    padding: 15px;
+    height: 8em;
+}
+
+.number-prefix{
+    /*display: block;*/
+    margin-block-start: 1em;
+    /*margin-block-end: 1em;*/
+    margin-inline-start: 40px;
+    /*margin-inline-end: 40px;*/
+    background: yellowgreen;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    margin-left: 30px;
+
+}
+
+.info{
+    margin:auto;
+    font-size: 20px;
+    text-align: center;
+    position: relative;
+    top: 10px;
+}
+
+.type{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0px 10px;
+    margin: 2px 25px;
+    color: #fcfaff;
+    font-size: 20px;
+    
+}
+
+.poison{
+    background-color: #752283;
+    border-radius: 5px
+}
+
+.grass{
+    background-color: #40CB3D;
+    border-radius: 5px
+}
+
+.fire{
+    background-color: #EDA147;
+    border-radius: 5px
+}
+
+.flying{
+    background-color:#a2bbeb;
+    border-radius: 5px
+}
