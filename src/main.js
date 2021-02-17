@@ -1,7 +1,7 @@
-//import { example } from './data.js';
+//import {order } from './data.js';
 // import data from './data/lol/lol.js';
 // import data from './data/rickandmorty/rickandmorty.js';
-import data from './data/pokemon/pokemon.js';
+//import data from './data/pokemon/pokemon.js';
 //console.log(example, data);
 // console.log(data);
 //Aquí estoy declarando una función que recibe como parámetro un arreglo de pokemones
@@ -10,30 +10,49 @@ import data from './data/pokemon/pokemon.js';
 //Despues hago uso de un bucle para iterar cada uno de los objetos del array y almacenarlos en la variable pokemon
 //luego hace el procedimiento del bloque (sentencia porque realizará una acción ) y pasa con el siguiente elemento del arreglo
 
-const showData = function(pokemonArray) {
-    let list = document.getElementById("list")
-    let pokemonList = ""
 
-    for (let pokemon of pokemonArray) {
-        pokemonList += `        <li id="${pokemon.num}" class="pokemon">
-        <span class="number-prefix ${pokemon.type[0]}">${pokemon.num}</span>
-        <section>
-          <figure>
-            <p class="info">${pokemon.name}</p>
-            <img src="${pokemon.img}">
-          </figure>
+import data from './data/pokemon/pokemon.js';
+import {
+  showInfo, orderBy,
+} from './data.js';
 
-        </section>
-        <div class="type">`
-        for (let poketype of pokemon.type) {
-            pokemonList += `          <span class="${poketype}">${poketype}</span>`
-        }
-          `          </div>
-      </li>`
-    }
-//Aquí estoy concatenando lo que ya tengo es decir las listas con el primer pokemon  
-//he usado inerHTML para cambiar el html de un elemento en este caso la lista no ordenada
-    list.innerHTML = pokemonList;
-}
+ const showData = function(pokemonArray) {
+     let list = document.getElementById("list")
+     let pokemonList = ""
 
-showData(data.pokemon)
+     for (let pokemon of pokemonArray) {
+         pokemonList += `        <li id="${pokemon.num}" class="pokemon">
+         <span class="number-prefix ${pokemon.type[0]}">${pokemon.num}</span>
+         <section>
+           <figure class="card">
+             <p class="info">${pokemon.name}</p>
+             <img src="${pokemon.img}" class="imgPokemon">
+           </figure>
+
+         </section>
+         <div class="type">`
+         for (let poketype of pokemon.type) {
+             pokemonList += `          <span class="${poketype}">${poketype}</span>`
+         }
+           `          </div>
+       </li>`
+     }
+ //Aquí estoy concatenando lo que ya tengo es decir las listas con el primer pokemon  
+ //he usado inerHTML para cambiar el html de un elemento en este caso la lista no ordenada
+     list.innerHTML = pokemonList;
+ }
+ showData(data.pokemon)
+
+ 
+ const pokemones = data.pokemon;
+ const orderby = document.getElementById('orderby');
+ const listElement = document.getElementById('list');
+ orderby.addEventListener('change', () => {
+   const orderbyValue = orderby.value;
+   listElement.innerHTML = `${(orderBy(pokemones, orderbyValue)).map(showInfo).join('')}`;
+
+   
+   
+ });
+
+  

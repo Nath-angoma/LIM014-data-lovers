@@ -1,24 +1,73 @@
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
   <meta charset="utf-8">
   <title>Data Lovers</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
+  <header >
+    <figure class="logo">
+      <img src="img/logo-pok.png" alt="logo" class="logo-pokemon">
+      <img src="img/ash.png" alt="ash" class="ash">
+    </figure>
 
+  <section class="menuContainer">
+    <nav class="side-nav" id="side-nav" > 
+     <!-- <label for="menu-toggle" >&#9776</label>
+      <input type="checkbox" id="menu-toggle">-->
+        <ul class="optionList" >
+          <li class="nav-item">
+            <a href="#" onclick="location.reload();">Home</a> 
+          </li>
+          <li class="nav-item">
+           <a href="#">Filter</a> 
+          </li>
+
+          <li class="nav-item">
+            <select id="orderby">
+              <option>Ordenar</option>
+              <option value="A-Z">A-Z</option>
+              <option value="Z-A">Z-A</option>
+            </select>
+          </li>
+
+          <li class="nav-item">
+            <select id="selectType">
+              <option value="">Type</option>
+              <option value="Grass">Planta </option>
+              <option value= "Poison">Veneno</option>
+              <option value="Fire">Fuego </option>
+              <option value= "Water">Agua</option>
+              <option value= "Normal">Normal</option>
+              <option value="Ground">Tierra </option>
+              <option value= "Fighting">Lucha</option>
+              <option value= "Rock">Roca</option>
+              <option value="Ice">Hielo </option>
+              <option value= "Flying">Volador</option>
+              <option value= "Bug">Bicho</option>
+              <option value="Electric">Eléctrico </option>
+              <option value= "Fairy">Hada</option>
+              <option value= "Psychic">Psíquico</option>
+              <option value="Ghost">Fantasma </option>
+              <option value= "Dragon">Dragón</option>
+          </select>
+          </li>
+      </ul>
+    </nav>
+  </section>
+</header>
   <main>
     <section>
       <ul id="list" class="list">
-
       </ul>
-
-
     </section>
-
   </main>
+  
 
   <script src="main.js" type="module"></script>
 </body>
