@@ -13,7 +13,7 @@
 
 import data from './data/pokemon/pokemon.js';
 import {
-  showInfo, orderBy,
+   orderBy, 
 } from './data.js';
 
  const showData = function(pokemonArray) {
@@ -39,7 +39,7 @@ import {
      }
  //Aquí estoy concatenando lo que ya tengo es decir las listas con el primer pokemon  
  //he usado inerHTML para cambiar el html de un elemento en este caso la lista no ordenada
-     list.innerHTML = pokemonList;
+ list.innerHTML = pokemonList;
  }
  showData(data.pokemon)
 
@@ -49,10 +49,63 @@ import {
  const listElement = document.getElementById('list');
  orderby.addEventListener('change', () => {
    const orderbyValue = orderby.value;
+    const showInfo = pokemon => `
+<li class="pokemon">
+    <span class="number-prefix">${pokemon.num}</span>
+    <section>
+      <figure class="card">
+        <p class="info">${pokemon.name}</p>
+        <img src="${pokemon.img}" class="imgPokemon">
+      </figure>            
+    </section>
+    <div class="type"> 
+      
+<span class=" ${pokemon.type[0]}">${pokemon.type[0]}</span>
+<span class=" ${pokemon.type[1]}">${pokemon.type[1]}</span>    
+  </div>
+</li>
+`;
    listElement.innerHTML = `${(orderBy(pokemones, orderbyValue)).map(showInfo).join('')}`;
-
-   
-   
  });
 
-  
+ 
+
+
+ /*
+ const formulario = document.querySelector("inputSearch");
+ let boton = document.querySelector("·btn-search");
+
+
+ const filtrar=()=>{
+  let lista.innerHTML ="";
+   const texto = formulario.value.toLowerCase();
+   for(let pokemon of pokemonArray){
+     let nombre = pokemon.name.toLoweCase();
+     if(nombre.indexOf(texto)!==1){
+        lista += `        <li id="${pokemon.num}" class="pokemon">
+        <span class="number-prefix ${pokemon.type[0]}">${pokemon.num}</span>
+        <section>
+          <figure class="card">
+            <p class="info">${pokemon.name}</p>
+            <img src="${pokemon.img}" class="imgPokemon">
+          </figure>
+
+        </section>
+        <div class="type">`
+        for (let poketype of pokemon.type) {
+          lista += `          <span class="${poketype}">${poketype}</span>`
+        }
+          `          </div>
+      </li>`
+     }
+
+   }
+    if(lista.innerHTML === ''){
+      lista.innerHTML += `          <li>noay
+      </li>`
+    }
+    lista.innerHTML = list;
+ }
+
+
+ boton.addEventListener('click', filtrar)*/

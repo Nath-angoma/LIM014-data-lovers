@@ -1,4 +1,36 @@
 
+.search{
+    
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    
+}
+
+#inputSearch{
+    background: #e9ecef;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    height: 30px;
+    width: 120px;
+    margin-left: -1px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    padding: .375rem .75rem;
+    
+    
+}
+
+.lupa{
+    width: 1.5em;
+    align-items: center;
+    padding: .375rem .75rem;
+    background-color: #e9ecef;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+}
+
 .logo{
     display: flex;
     justify-content: space-between;
