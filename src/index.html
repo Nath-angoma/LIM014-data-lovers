@@ -1,36 +1,33 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
   <meta charset="utf-8">
   <title>Data Lovers</title>
+  <link rel="icon" type="image/png" href="images/favicon.png"sizes="16x16">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css" />
+  <meta name="theme-color" content="#A2DB95"/>
+  
 </head>
 
 <body>
-  <header >
+  <header>
     <figure class="logo">
-      <img src="img/logo-pok.png" alt="logo" class="logo-pokemon">
-      <img src="img/ash.png" alt="ash" class="ash">
+      <!--<img src="images/logopokemon.jpg" alt="logo" class="logo-pokemon">-->
+      <!--<img src="images/ash.png" alt="ash" class="ash">-->
     </figure>
-
-  <section class="menuContainer">
-    <nav class="side-nav" id="side-nav" > 
-     <!-- <label for="menu-toggle" >&#9776</label>
-      <input type="checkbox" id="menu-toggle">-->
-        <ul class="optionList" >
+  </header>
+    <section class="menuContainer">
+      <nav class="side-nav" id="side-nav">
+        <ul class="optionList">
           <li class="nav-item">
-            <a href="#" onclick="location.reload();">Home</a> 
-          </li>
-          <li class="nav-item">
-           <a href="#">Filter</a> 
+            <a href="#" onclick="location.reload();">Home</a>
           </li>
 
           <li class="nav-item">
             <select id="orderby">
-              <option>Ordenar</option>
+              <option>Order</option>
               <option value="A-Z">A-Z</option>
               <option value="Z-A">Z-A</option>
             </select>
@@ -38,41 +35,47 @@
 
           <li class="nav-item">
             <select id="selectType">
-              <option value="">Type</option>
-              <option value="grass">Planta </option>
-              <option value= "poison">Veneno</option>
-              <option value="fire">Fuego </option>
-              <option value= "water">Agua</option>
-              <option value= "normal">Normal</option>
-              <option value="ground">Tierra </option>
-              <option value= "fighting">Lucha</option>
-              <option value= "rock">Roca</option>
-              <option value="ice">Hielo </option>
-              <option value= "flying">Volador</option>
-              <option value= "bug">Bicho</option>
-              <option value="electric">Eléctrico </option>
-              <option value= "fairy">Hada</option>
-              <option value= "psychic">Psíquico</option>
-              <option value="ghost">Fantasma </option>
-              <option value= "dragon">Dragón</option>
-          </select>
+              <option value="">Filter</option>
+              <option value="grass">Grass</option>
+              <option value="poison">Poison</option>
+              <option value="fire">Fire</option>
+              <option value="water">Water</option>
+              <option value="normal">Normal</option>
+              <option value="ground">Ground</option>
+              <option value="fighting">Fighting</option>
+              <option value="rock">Rock</option>
+              <option value="ice">Ice</option>
+              <option value="flying">Flying</option>
+              <option value="bug">Bug</option>
+              <option value="electric">Electric</option>
+              <option value="fairy">Fairy</option>
+              <option value="psychic">Psychic</option>
+              <option value="ghost">Ghost</option>
+              <option value="dragon">Dragon</option>
+            </select>
           </li>
-      </ul>
-    </nav>
-  </section>
-</header>
+          
+          <div class="search">
+            <img class="lupa" src="images/iconSearch.png">
+            <input type="text" id="inputSearch" placeholder="Search Name"></input>
+            <button id="btn-search" class="icon-search button-search">Go</button>
+          </div>
+        </ul>
+
+      </nav>
+    </section>
+  
+
   <main>
-    <div class="search" >
-      <img class="lupa" src="/img/lupa.svg">
-      <input type="text"  id="inputSearch" placeholder="Ingrese pokemon" ></input>
-      <button id="btn-search" class="icon-search button-search">Buscar</button>
-    </div>
+    
     <section>
       <ul id="list" class="list"></ul>
     </section>
+    <div id="miModal" class="modalContainer">
+      
+    </div>
   </main>
-  
-
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js"></script>
   <script src="main.js" type="module"></script>
 </body>
 
