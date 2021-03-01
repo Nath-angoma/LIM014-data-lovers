@@ -1,6 +1,8 @@
 import data from './data/pokemon/pokemon.js';
 import {pokedex} from './data.js';
 
+import Chart from 'chart.js';
+
 
 const backColor = {
   water: '#6890F0',
@@ -224,7 +226,7 @@ filterBy.addEventListener('change', () => {
 const order = document.getElementById('orderby');
 //const listElement = document.getElementById('list');
 order.addEventListener('change', () => {
-  const orderbyValue = orderby.value;
+  const orderbyValue = order.value;
   showData(pokedex.orderByName(data.pokemon, orderbyValue))
 });
 

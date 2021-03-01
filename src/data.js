@@ -20,7 +20,7 @@ export const pokedex = {
           sortObj = pokemons.sort((a, b) => ((a.name >= b.name) ? -1 : 1));
           break;
         case 'Order':
-          sortObj = pokemons.sort((a, b) => ((a.num <= b.num) ? -1 : 1));;
+          sortObj = pokemons.sort((a, b) => ((a.num <= b.num) ? -1 : 1));
           break;
         }
         return sortObj;
