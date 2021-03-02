@@ -1,12 +1,10 @@
-import { example, anotherExample } from '../src/data.js';
+import {} from '../src/data.js';
 
 
-describe('example', () => {
-  it('is a function', () => {
-    expect(typeof example).toBe('function');
-  });
 
-  it('returns `example`', () => {
+describe('ordenar de A-Z', () => {
+  
+ it('returns `example`', () => {
     expect(example()).toBe('example');
   });
 });

@@ -1,3 +1,6 @@
+*{
+    box-sizing: border-box;
+}
 
 .search{
     
@@ -5,6 +8,8 @@
     display: flex;
     flex-wrap: wrap;
     align-items: stretch;
+    justify-content: center;
+    padding: 10px;
     
 }
 
@@ -12,8 +17,8 @@
     background: #e9ecef;
     border: 1px solid #ced4da;
     border-radius: .25rem;
-    height: 30px;
-    width: 120px;
+    height: 40px;
+    width: 12em;
     margin-left: -1px;
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
@@ -23,9 +28,9 @@
 }
 
 .lupa{
-    width: 1.5em;
+    width: 2.5em;
     align-items: center;
-    padding: .375rem .75rem;
+    padding: .100em .100em;
     background-color: #e9ecef;
     border: 1px solid #ced4da;
     border-radius: .25rem;
@@ -34,32 +39,28 @@
 .logo{
     display: flex;
     justify-content: space-between;
-    margin-block-start: -30px;
-    margin-block-end: 0.5em;
-    margin-inline-start: 0px;
-    margin-inline-end: -15px;
-    
+    margin: 0;     
 }
-.logo-pokemon, .ash{ 
+.logo-pokemon, .ash, .pokemongif{ 
     padding: 10px;
-    
+    height: 12em;
 }
 
-.list{
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-   
-
-}
 
 .pokemon{
     display: flex;
     padding: 12px 13px 8px 12px;
     margin-bottom: 12px;
     flex-direction: column;
-    z-index: -1;
     
+}
+
+.pokemonList{
+    list-style-type:none;
+    display: flex;
+    flex: auto;
+    flex-flow: row wrap;
+    justify-content: space-around;
 }
 
 .card {
@@ -71,8 +72,9 @@
 }
 
 .imgPokemon {
-    padding: 15px;
-    height: 8em;
+    padding: 0.5px;
+    height: 10rem;
+    margin-top: 15px;
     cursor:pointer;
     transition: all ease-in .3s;
 }
@@ -81,7 +83,7 @@
     -webkit-transform:scale(1.3);
     transform:scale(1.2);
   }
-.card   {overflow:hidden;}
+  
 
 .number-prefix{
     /*display: block;*/
@@ -89,7 +91,6 @@
     /*margin-block-end: 1em;*/
     margin-inline-start: 40px;
     /*margin-inline-end: 40px;*/
-    background: yellowgreen;
     width: 30px;
     height: 30px;
     border-radius: 50%;
@@ -98,6 +99,7 @@
     justify-content: center;
     z-index: 1;
     margin-left: 30px;
+
 
 }
 
@@ -229,8 +231,8 @@ footer{
 
 .menuContainer{
     background-color: #98D8D8;
-    padding: 2em;
-    margin: 3em;
+    padding: 1em;
+    margin-block-end: 2em;
 }
 .side-nav{
    
@@ -257,4 +259,40 @@ footer{
 }
 
 
-
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 2; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
