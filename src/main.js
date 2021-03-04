@@ -1,9 +1,6 @@
 import data from './data/pokemon/pokemon.js';
 import {pokedex} from './data.js';
 
-import Chart from 'chart.js';
-
-
 const backColor = {
   water: '#6890F0',
   fire: '#F08030',
@@ -110,11 +107,7 @@ const showData = function (pokemonArray) {
 </div>
 </div>
 </div>
-</section>
-          
-
-      <section class="rows">
-          <section class="firstRow">
+<section class="firstRow">
             <section class="heighWeight">
               <p> Height:${pokemon.size.height}</p>
               <p> Weight${pokemon.size.weight} </p>
@@ -124,20 +117,26 @@ const showData = function (pokemonArray) {
         
               
           <section class="secondRow">
-              <article class="sub-title">
-                <article class="titleAttack" colspan="3."> Quick Move: </article>
+              <section class="sub-title">
+                <section class="titleAttack" colspan="3."> Quick Move: </section>
                 ${pokemon['quick-move'].map(move => '<span class="typeAttack '+move.type+'"> '+move.name+' </span>').join('')}
-              </article>
-              <article class="sub-title">
-                <article class="titleAttack" colspan="4.">Special Attack: </article>
+              </section>
+              <section class="sub-title">
+                <section class="titleAttack" colspan="4.">Special Attack: </section>
                 ${pokemon['special-attack'].map(attack => '<span class="typeAttack '+attack.type+'"> '+attack.name+' </span>').join('')}
-              </article>
               </section>
           </section>
+</section>
+          
 
-          <section class="row3" id="chartjs-radar"><canvas id="canvas"></canvas></section>
+      <section class="rows">
+          
+      </section>
+
+          
           
           <div class="evolandstas" id="column-M">
+            <section class="row3" id="chartjs-radar" style="width: 400px; padding-left: 0; padding-right: 0; margin-left: auto; margin-right: auto;"><canvas id="canvas"></canvas></section>
             <section class="evoluciones">
               <div class="container-movements">
                 <h3 class="modal-h3">EVOLUTION</h3>

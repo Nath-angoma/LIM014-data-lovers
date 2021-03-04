@@ -1,6 +1,6 @@
 import {pokedex} from '../src/data.js';
 
-//para filter
+//para filter bycondition 1
 describe('filter By Type test', () => {
   it('is a function', () => {
     expect(typeof pokedex.filterByType).toBe('function');
@@ -22,12 +22,17 @@ describe('filter By Type test', () => {
       type: 'fire',
     }]
 
+    
+
+
     expect(pokedex.filterByType(data, type)).toEqual(result);
 
   });
 });
+//Para filter by type condition 2
 
-//para order
+
+//para order de la A - Z
 describe('orderByName test', () => {
   it('is a function', () => {
     expect(typeof pokedex.orderByName).toBe('function');
