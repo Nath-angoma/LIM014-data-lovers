@@ -8,15 +8,13 @@
   },
 
   "extends": "eslint:recommended",
-
   "globals":{
       "Chart" : "readonly"
     },
     "rules": {
       "no-console": "warn",
       "import/extensions": 0
-    } 
-    
+    }   
 }
 
 
