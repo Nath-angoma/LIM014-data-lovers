@@ -5,85 +5,94 @@
 <head>
   <meta charset="utf-8">
   <title>Data Lovers</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap" rel="stylesheet"> 
+  <link rel="icon" type="image/png" href="images/favicon.png" sizes="16x16">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css" />
+
+  
 </head>
 
 <body>
-  <header >
-    <figure class="logo">
-      <img src="img/logo-pok.png" alt="logo" class="logo-pokemon">
-      <img src="img/pokemones.gif" class="pokemongif">  
-      <img src="img/ash.png" alt="ash" class="ash">
+  <header>
+    <figure class="m-0">
+      <img src="img/fondo_pokemon.jpg" alt="logo" class="logo-pokemon">
+      
     </figure>
-
-  <section class="menuContainer">
-    <nav class="side-nav" id="side-nav" > 
-     <!-- <label for="menu-toggle" >&#9776</label>
-      <input type="checkbox" id="menu-toggle">-->
-        <ul class="optionList" >
-          <li class="nav-item">
-            <a href="#" onclick="location.reload();">Home</a> 
-          </li>
+    <nav class="side-nav" id="side-nav">
+      <ul class="optionList">
+        <li class="nav-item">
+          <a href="#" onclick="location.reload();" class="button-container">Pokedex</a>
           
-          <li class="nav-item">
-            <select id="selectType">
-              <option value="">Type</option>
-              <option value="grass">Grass </option>
-              <option value= "poison">Poison</option>
-              <option value="fire">Fire </option>
-              <option value= "water">Water</option>
-              <option value= "normal">Normal</option>
-              <option value="ground">Ground </option>
-              <option value= "fighting">Fighting</option>
-              <option value= "rock">Rock</option>
-              <option value="ice">Ice </option>
-              <option value= "flying">Flying</option>
-              <option value= "bug">Bug</option>
-              <option value="electric">Electric </option>
-              <option value= "fairy">Fairy</option>
-              <option value= "psychic">Psychic</option>
-              <option value="ghost">Ghost </option>
-              <option value= "dragon">Dragn</option>
-          </select>
-          </li>
-
-          <li class="nav-item">
-            <select id="orderby">
-              <option>Ordenar</option>
-              <option value="A-Z">A-Z</option>
-              <option value="Z-A">Z-A</option>
-            </select>
-          </li>
+        </li>
+        <li class="nav-item">
+          <a href="https://pokemongolive.com/post/feb-2021-events/?hl=es#:~:text=Mega%2DVenusaur%2C%20Mega%2DCharizard,1%20de%20marzo%20de%202021." class="button-container" >Eventos</a>
+          
+        </li>
+        <li class="nav-item">
+          <a href="#" class="button-container">Nosotros</a>
+        
+        </li>
       </ul>
+
     </nav>
-  </section>
-</header>
-  <main>
-    <div class="search" >
-      <img class="lupa" src="/img/lupa.svg">
-      <input type="text"  id="inputSearch" placeholder="Ingrese pokemon" ></input>
-      <button id="btn-search" class="icon-search button-search">Buscar</button>
-    </div>
-    <section class="pokemontotal">
-    <!-- <div class="modal flex" id="modal"></div>  -->  
+  </header>
+    
+    <section> 
+      <ul class="contentOption">
+        <li class="nav-option">
+          <select id="orderby">
+            <option>Order</option>
+            <option value="A-Z">A-Z</option>
+            <option value="Z-A">Z-A</option>
+          </select>
+        </li>
 
-<!-- The Modal -->
-<div id="myModal" class="modal">
-
-  <!-- Modal content -->
-  <div class="modal-content" id="content">
-    <span class="close">&times;</span>
-    <div id="bodyModal"></div>
-  </div>
-
-</div>
-      <ul id="list" class="pokemonList"></ul>
+        <li class="nav-option">
+          <select id="selectType">
+            <option value="">Filter</option>
+            <option value="grass">Grass</option>
+            <option value="poison">Poison</option>
+            <option value="fire">Fire</option>
+            <option value="water">Water</option>
+            <option value="normal">Normal</option>
+            <option value="ground">Ground</option>
+            <option value="fighting">Fighting</option>
+            <option value="rock">Rock</option>
+            <option value="ice">Ice</option>
+            <option value="flying">Flying</option>
+            <option value="bug">Bug</option>
+            <option value="electric">Electric</option>
+            <option value="fairy">Fairy</option>
+            <option value="psychic">Psychic</option>
+            <option value="ghost">Ghost</option>
+            <option value="dragon">Dragon</option>
+          </select>
+        </li>
+        <li class="search">
+          <input type="text" id="inputSearch"  placeholder="Search Name">
+        </li>
+      </ul>
     </section>
-  </main>
   
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+
+  <main>
+    
+    <section>
+      <ul id="list" class="list"></ul>
+    </section>
+    <div id="miModal" class="modalContainer">
+      
+    </div>
+  </main>
+
   <script src="main.js" type="module"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js"></script>
 </body>
 
 </html>
+
+
+
+
