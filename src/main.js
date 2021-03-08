@@ -1,7 +1,6 @@
 import data from './data/pokemon/pokemon.js';
 import {pokedex} from './data.js';
 
-
 const backColor = {
 water: '#6890F0',
 fire: '#F08030',
@@ -26,6 +25,7 @@ fairy:'#B8B8D0',
 const containerList = document.getElementById("list")
 const pokemonModal = document.getElementById('miModal');
 var body = document.getElementsByTagName("body")[0];
+
 const showData = function (pokemonArray) {
   containerList.innerHTML = ""
 
