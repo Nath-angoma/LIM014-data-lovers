@@ -1,0 +1,98 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Data Lovers</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap" rel="stylesheet"> 
+  <link rel="icon" type="image/png" href="img/favicon.png" sizes="16x16">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css" />
+
+  
+</head>
+
+<body>
+  <header>
+    <figure class="m-0">
+      <img src="img/fondo_pokemon.jpg" alt="logo" class="logo-pokemon">
+      
+    </figure>
+    <nav class="side-nav" id="side-nav">
+      <ul class="optionList">
+        <li class="nav-item">
+          <a href="#" onclick="location.reload();" class="button-container">Pokedex</a>
+          
+        </li>
+        <li class="nav-item">
+          <a href="https://pokemongolive.com/post/feb-2021-events/?hl=es#:~:text=Mega%2DVenusaur%2C%20Mega%2DCharizard,1%20de%20marzo%20de%202021." class="button-container" >Eventos</a>
+          
+        </li>
+        <li class="nav-item">
+          <a href="#" class="button-container">Nosotros</a>
+        
+        </li>
+      </ul>
+
+    </nav>
+  </header>
+    
+    <section> 
+      <ul class="contentOption">
+        <li class="nav-option">
+          <select id="orderby">
+            <option>Order</option>
+            <option value="A-Z">A-Z</option>
+            <option value="Z-A">Z-A</option>
+          </select>
+        </li>
+
+        <li class="nav-option">
+          <select id="selectType">
+            <option value="">Filter</option>
+            <option value="grass">Grass</option>
+            <option value="poison">Poison</option>
+            <option value="fire">Fire</option>
+            <option value="water">Water</option>
+            <option value="normal">Normal</option>
+            <option value="ground">Ground</option>
+            <option value="fighting">Fighting</option>
+            <option value="rock">Rock</option>
+            <option value="ice">Ice</option>
+            <option value="flying">Flying</option>
+            <option value="bug">Bug</option>
+            <option value="electric">Electric</option>
+            <option value="fairy">Fairy</option>
+            <option value="psychic">Psychic</option>
+            <option value="ghost">Ghost</option>
+            <option value="dragon">Dragon</option>
+          </select>
+        </li>
+        <li class="search">
+          <input type="text" id="inputSearch"  placeholder="Search Name">
+        </li>
+      </ul>
+    </section>
+  
+
+  <main>
+    
+    <section>
+      <ul id="list" class="list"></ul>
+    </section>
+    <div id="miModal" class="modalContainer">
+      
+    </div>
+  </main>
+
+  <script src="main.js" type="module"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+</body>
+
+</html>
+
+
+
+
