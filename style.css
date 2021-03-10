@@ -85,14 +85,7 @@ header{
     background-position-y: 5px;
     background-size: 2em;
   }
- /* .lupa {
-    
-    padding: .375rem .75rem;
-    background-color: #e9ecef;
-    border: 1px solid #ced4da;
-    border-radius: .25rem;
-  }
-  */
+
   
   .list{
     display: flex;
