@@ -1,6 +1,8 @@
 import data from './data/pokemon/pokemon.js';
 import {pokedex} from './data.js';
 
+
+
 const backColor = {
 water: '#6890F0',
 fire: '#F08030',
@@ -24,7 +26,7 @@ fairy:'#B8B8D0',
 }
 const containerList = document.getElementById("list")
 const pokemonModal = document.getElementById('miModal');
-var body = document.getElementsByTagName("body")[0];
+var body = document.getElementsByTagName("body")[0]; // arreglar
 
 const showData = function (pokemonArray) {
   containerList.innerHTML = ""
@@ -54,7 +56,7 @@ const showData = function (pokemonArray) {
       if (pokemon.evolution['prev-evolution']) {
         let evolutions = getPrevEvolution(pokemon.evolution['prev-evolution'])
 
-        evolutions.forEach(evol => {
+        evolutions.forEach(evol => {  //NO ES UN BUCLE, ES UN METODO q ejecuta la función
           prevEvolution += `<div class="evolution-each-container">
             <img class="evolution-img" src="https://www.serebii.net/pokemongo/pokemon/${evol.num}.png">
             <p class="evolution-p">${evol.name}</p><p class="evolution-p">N° ${evol.num}</p>
@@ -88,8 +90,8 @@ const showData = function (pokemonArray) {
         
         <section class="row-2">
           <section class="rows" id="rows">
-            <p> Height:${pokemon.size.height}</p>
-            <p> Weight${pokemon.size.weight} </p>
+            <p>Height:${pokemon.size.height}</p>
+            <p>Weight: ${pokemon.size.weight} </p>
             <article class="sub-title">
               <article class="titleAttack" ><strong>QUIK MOVE: </strong></article>
                  ${pokemon['quick-move'].map(move => '<span class="typeAttack '+move.type+'"> '+move.name+' </span>').join('')}
@@ -148,12 +150,12 @@ const showData = function (pokemonArray) {
     </div>
     <div class="rows" id="chartjs-radar">
           
-    </div> 
-    <canvas id="canvas"></canvas>
+    </div>
+    <section class="row3" id="chartjs-radar" style="width: 400px; padding-left: 0; padding-right: 0; margin-left: auto; margin-right: auto;"><canvas id="canvas"></canvas></section>
     </div> `
 
       let colorType = backColor[pokemon.type[0]];
-      let color = Chart.helpers.color;
+      let color =Chart.helpers.color;
       let config = {
         type: 'radar',
         data: {

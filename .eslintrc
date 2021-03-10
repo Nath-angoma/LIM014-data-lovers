@@ -6,9 +6,13 @@
     "ecmaVersion": 2018,
     "sourceType": "module"
   },
+    "globals": {
+      "Chart": "readonly" 
+    },
   "extends": "eslint:recommended",
   "rules": {
     "no-console": "warn",
     "import/extensions": 0
   }
+  
 }

@@ -16,7 +16,6 @@ header{
 }
 .side-nav{
  background: #0E68D1;
- padding: 0.5em;
  border-top-left-radius: 35px 40px;
  border-top-right-radius: 35px 40px;
  position: absolute;
@@ -40,7 +39,7 @@ header{
     text-transform:uppercase;
     padding:1em 1.5em;
     font-weight: bolder;
-    font-size: 20px;
+    font-size: 15px;
     }
   
 .contentOption{
@@ -70,30 +69,23 @@ header{
 	background: #9dbcca;
 }
   #inputSearch {  
-  box-shadow: 5px 5px 0 rgb(203 211 221);
-  text-align-last: center;
-  padding: 7px 10px;
-  height: 42px;	
-	background: #f0f0f0;
-	font-size: 1em;
-	color: #999;
-	border:2px solid rgba(0,0,0,0.2);
-  border-radius: 20px;
-  margin: 5px;
-  background-image: url("img/lupa.svg");
-  background-repeat: no-repeat;
-  background-position-x: 10px;
-  background-position-y: 5px;
-  background-size: 2em;
+    box-shadow: 5px 5px 0 rgb(203 211 221);
+    text-align-last: center;
+    padding: 7px 10px;
+    height: 42px;	
+    background: #f0f0f0;
+    font-size: 1em;
+    color: #999;
+    border:2px solid rgba(0,0,0,0.2);
+    border-radius: 20px;
+    margin: 5px;
+    background-image: url("img/lupa.svg");
+    background-repeat: no-repeat;
+    background-position-x: 10px;
+    background-position-y: 5px;
+    background-size: 2em;
   }
- /* .lupa {
-    
-    padding: .375rem .75rem;
-    background-color: #e9ecef;
-    border: 1px solid #ced4da;
-    border-radius: .25rem;
-  }
-  */
+
   
   .list{
     display: flex;
@@ -113,8 +105,7 @@ header{
   }
   
   .card {
-    width: 8em;
-    height: 9em;
+    height: 8em;
     box-shadow: 8px 8px 0 rgb(203 211 221);
     background: #f2f6fb;
     border-radius: 20px;
@@ -304,12 +295,12 @@ header{
   
   .row-2{
     flex: 0 0 auto;
-    width: 75%;
+    width: 80%;
   }
   #rows{
     background-color:rgb(243 247 251 );
-    margin-left: 50px;
-    margin-right: 30px;
+    margin-left: 10px;
+    margin-right: 5px;
   }
 
   .titleAttack{
@@ -317,9 +308,10 @@ header{
   }
   .modal_block4{
     background-color: rgb(243 247 251 );
-    width: 12em;
-    padding-top: 1.5em;
-    padding-left: 2em;
+    width: 10em;
+    margin-top: 0.5em;
+    padding-top: 2em;
+    padding-left: 1em;
   }
   .modal_block1 img {
     width: 10em;
@@ -349,9 +341,9 @@ header{
     display: flex;
     flex-wrap: wrap;
     text-align: center;
-    justify-content: space-around;
+    justify-content: space-between;
     margin-left: 15px;
-    padding: 10px;  
+    padding: 2px; 
   }
 
   article span{

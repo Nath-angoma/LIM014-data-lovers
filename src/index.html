@@ -10,6 +10,7 @@
   <link rel="icon" type="image/png" href="img/favicon.png" sizes="16x16">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" media="(max-width: 600px)" href="style.css" />
 
   
 </head>
@@ -17,21 +18,20 @@
 <body>
   <header>
     <figure class="m-0">
-      <img src="img/fondo_pokemon.jpg" alt="logo" class="logo-pokemon">
-      
+      <img src="img/fondo_pokemon.jpg" alt="logo" class="logo-pokemon"> 
     </figure>
     <nav class="side-nav" id="side-nav">
       <ul class="optionList">
         <li class="nav-item">
           <a href="#" onclick="location.reload();" class="button-container">Pokedex</a>
+  
+        </li>
+        <li class="nav-item">
+          <a href="https://pokemongolive.com/post/feb-2021-events/?hl=es#:~:text=Mega%2DVenusaur%2C%20Mega%2DCharizard,1%20de%20marzo%20de%202021." class="button-container" >Events</a>
           
         </li>
         <li class="nav-item">
-          <a href="https://pokemongolive.com/post/feb-2021-events/?hl=es#:~:text=Mega%2DVenusaur%2C%20Mega%2DCharizard,1%20de%20marzo%20de%202021." class="button-container" >Eventos</a>
-          
-        </li>
-        <li class="nav-item">
-          <a href="#" class="button-container">Nosotros</a>
+          <a href="https://play.google.com/store/apps/details?id=com.nianticlabs.pokemongo&hl=es_PE&gl=US" class="button-container">Download</a>
         
         </li>
       </ul>
@@ -88,7 +88,7 @@
   </main>
 
   <script src="main.js" type="module"></script>
-  <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
 </body>
 
 </html>
