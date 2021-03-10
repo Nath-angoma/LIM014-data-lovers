@@ -2,7 +2,6 @@ import data from './data/pokemon/pokemon.js';
 import {pokedex} from './data.js';
 
 
-
 const backColor = {
 water: '#6890F0',
 fire: '#F08030',
@@ -126,6 +125,7 @@ const showData = function (pokemonArray) {
             </section>
     
             <section class="modal_block4" id="column-M">
+
             <section class="evoluciones">
             <h3 class="modal-h3">EVOLUTION</h3>
               <div class="container-movements">
