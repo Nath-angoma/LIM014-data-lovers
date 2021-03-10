@@ -12,9 +12,9 @@ export const pokedex = {
       let sortObj = [];
       let option = orderBy.replace(/ /g,'')
   
-      switch (option) {
-        case 'A-Z':
-          sortObj = pokemons.sort((a, b) => ((a.name <= b.name) ? -1 : 1));
+      switch (option) {//expesion
+        case 'A-Z': 
+          sortObj = pokemons.sort((a, b) => ((a.name <= b.name) ? -1 : 1));// declaracion  //condicion //expresion 1 y 2
           break;
         case 'Z-A':
           sortObj = pokemons.sort((a, b) => ((a.name >= b.name) ? -1 : 1));
