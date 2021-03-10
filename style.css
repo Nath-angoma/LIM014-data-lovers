@@ -112,8 +112,7 @@ header{
   }
   
   .card {
-    width: 6em;
-    height: 5em;
+    height: 8em;
     box-shadow: 8px 8px 0 rgb(203 211 221);
     background: #f2f6fb;
     border-radius: 20px;
@@ -303,7 +302,7 @@ header{
   
   .row-2{
     flex: 0 0 auto;
-    width: 75%;
+    width: 80%;
   }
   #rows{
     background-color:rgb(243 247 251 );
