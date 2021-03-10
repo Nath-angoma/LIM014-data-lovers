@@ -295,7 +295,7 @@ header{
   
   .row-2{
     flex: 0 0 auto;
-    width: 80%;
+    width: 75%;
   }
   #rows{
     background-color:rgb(243 247 251 );
@@ -354,7 +354,7 @@ header{
   #column-M{
     display: flex;
     justify-content: space-between;
-    width: 25em;
+    width: 19em;
     padding-right: 2em;
   }
       
